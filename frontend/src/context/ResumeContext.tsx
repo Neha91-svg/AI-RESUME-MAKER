@@ -28,6 +28,7 @@ const initialData: ResumeData = {
     summary: '',
     linkedin: '',
     github: '',
+    themeColor: '#000000',
   },
   experience: [],
   education: [],
@@ -55,6 +56,9 @@ export const ResumeProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (!parsed.certifications) parsed.certifications = [];
       if (!parsed.sections.find((s: any) => s.id === 'certifications')) {
         parsed.sections.push({ id: 'certifications', title: 'Certifications', enabled: true });
+      }
+      if (!parsed.personalInfo.themeColor) {
+        parsed.personalInfo.themeColor = '#000000';
       }
       return parsed;
     }

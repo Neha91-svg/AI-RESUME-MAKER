@@ -7,6 +7,7 @@ export interface ResumeData {
     github?: string;
     website?: string;
     summary: string;
+    themeColor?: string;
   };
   experience: Experience[];
   education: Education[];

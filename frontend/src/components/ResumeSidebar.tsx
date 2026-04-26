@@ -53,6 +53,29 @@ const ResumeSidebar: React.FC = () => {
         })}
       </div>
 
+      <div className="theme-selector mt-8">
+        <h4 className="text-sm font-semibold mb-4 text-muted uppercase tracking-wider">Theme Color</h4>
+        <div className="flex flex-wrap gap-3">
+          {[
+            '#000000', // Classic
+            '#6366f1', // Indigo
+            '#059669', // Emerald
+            '#dc2626', // Ruby
+            '#d97706', // Amber
+            '#2563eb', // Blue
+            '#7c3aed', // Violet
+          ].map((color) => (
+            <button
+              key={color}
+              className={`color-bubble ${resumeData.personalInfo.themeColor === color ? 'active' : ''}`}
+              style={{ backgroundColor: color }}
+              onClick={() => updatePersonalInfo({ themeColor: color })}
+              title={color}
+            />
+          ))}
+        </div>
+      </div>
+
       <style>{`
         .resume-sidebar {
           width: 300px;
@@ -100,6 +123,21 @@ const ResumeSidebar: React.FC = () => {
         .section-item span {
           font-size: 0.95rem;
           font-weight: 500;
+        }
+        .color-bubble {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 2px solid transparent;
+          cursor: pointer;
+          transition: var(--transition);
+        }
+        .color-bubble:hover {
+          transform: scale(1.2);
+        }
+        .color-bubble.active {
+          border-color: white;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
       `}</style>
     </div>

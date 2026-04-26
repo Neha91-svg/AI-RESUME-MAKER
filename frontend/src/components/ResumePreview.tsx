@@ -163,7 +163,7 @@ const ResumePreview: React.FC = () => {
         }
         .resume-header {
           text-align: center;
-          border-bottom: 2px solid #333;
+          border-bottom: 2px solid ${resumeData.personalInfo.themeColor || '#333'};
           padding-bottom: 0.5rem;
           margin-bottom: 1rem;
         }
@@ -173,6 +173,7 @@ const ResumePreview: React.FC = () => {
           margin: 0;
           letter-spacing: 1px;
           font-family: 'Garamond', serif;
+          color: ${resumeData.personalInfo.themeColor || '#000'};
         }
         .info-item {
           display: flex;
@@ -186,11 +187,12 @@ const ResumePreview: React.FC = () => {
         .section-title {
           font-size: 11pt;
           text-transform: uppercase;
-          border-bottom: 1px solid #000;
+          border-bottom: 1px solid ${resumeData.personalInfo.themeColor || '#000'};
           padding-bottom: 1px;
           margin-bottom: 0.4rem;
           font-weight: bold;
           font-family: 'Garamond', serif;
+          color: ${resumeData.personalInfo.themeColor || '#000'};
         }
         .resume-item {
           margin-bottom: 0.5rem;
