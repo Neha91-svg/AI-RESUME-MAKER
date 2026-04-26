@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useResume } from '../context/ResumeContext';
 import { useReactToPrint } from 'react-to-print';
-import { Download, Mail, Github, Linkedin, Globe, Shield } from 'lucide-react';
+import { Download, Mail, Link, ExternalLink } from 'lucide-react';
 
 const ResumePreview: React.FC = () => {
   const { resumeData } = useResume();
@@ -30,10 +30,10 @@ const ResumePreview: React.FC = () => {
                 <span className="info-item"><Mail size={12} /> {resumeData.personalInfo.email}</span>
               )}
               {resumeData.personalInfo.linkedin && (
-                <span className="info-item"><Linkedin size={12} /> {resumeData.personalInfo.linkedin}</span>
+                <span className="info-item"><Link size={12} /> {resumeData.personalInfo.linkedin}</span>
               )}
               {resumeData.personalInfo.github && (
-                <span className="info-item"><Github size={12} /> {resumeData.personalInfo.github}</span>
+                <span className="info-item"><ExternalLink size={12} /> {resumeData.personalInfo.github}</span>
               )}
             </div>
           </header>

@@ -2,7 +2,7 @@ import React from 'react';
 import ResumeSidebar from '../components/ResumeSidebar';
 import ResumeForm from '../components/ResumeForm';
 import ResumePreview from '../components/ResumePreview';
-import { motion } from 'framer-motion';
+
 import { FileText, LogOut, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

@@ -16,7 +16,7 @@ import {
 const ResumeSidebar: React.FC = () => {
   const { resumeData, toggleSection, updatePersonalInfo } = useResume();
 
-  const sectionIcons: Record<string, any> = {
+  const sectionIcons: Record<string, React.ElementType> = {
     personal: User,
     summary: FileText,
     experience: Briefcase,

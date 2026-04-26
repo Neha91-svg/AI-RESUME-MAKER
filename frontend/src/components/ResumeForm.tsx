@@ -1,6 +1,6 @@
 import React from 'react';
 import { useResume } from '../context/ResumeContext';
-import { Plus, Trash2, ChevronDown, ChevronUp } from 'lucide-react';
+import { Plus, Trash2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ResumeForm: React.FC = () => {
