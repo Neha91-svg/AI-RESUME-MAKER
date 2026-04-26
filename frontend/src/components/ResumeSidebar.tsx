@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 
 const ResumeSidebar: React.FC = () => {
-  const { resumeData, toggleSection } = useResume();
+  const { resumeData, toggleSection, updatePersonalInfo } = useResume();
 
   const sectionIcons: Record<string, any> = {
     personal: User,

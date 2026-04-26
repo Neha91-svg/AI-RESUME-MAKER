@@ -12,6 +12,7 @@
 - 🎯 **ATS Optimized**: Templates designed to pass through Applicant Tracking Systems effortlessly.
 - 👁️ **Real-time Preview**: See your changes instantly as you type.
 - 🪄 **Modern Aesthetics**: Premium glassmorphism design with smooth animations.
+- 🎨 **Theme Customization**: Choose from multiple professional accent colors to personalize your resume.
 - 🖨️ **Export to PDF**: High-quality print and PDF export support.
 - 📱 **Fully Responsive**: Create your resume on any device.
 
